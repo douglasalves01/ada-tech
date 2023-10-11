@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: minmax(100px, 150px);
+  grid-template-areas:
+    "header header header"
+    "aside-compras  main   aside-tarefas";
+}
+.header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0074a2;
+}
+.aside-compras {
+  grid-area: aside-compras;
+  padding: 0.5rem 2rem;
+}
+.aside-tarefas {
+  grid-area: aside-tarefas;
+  padding: 0.5rem 2rem;
+}
+.main {
+  grid-area: main;
+  padding: 0.5rem 2rem;
+}
+.check {
+  text-decoration: line-through;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table,
+th,
+td {
+  border: 1px solid rgb(252, 248, 248);
+}
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+th {
+  background-color: #0074a2;
+  color: white;
+}
+tr:nth-child(even) {
+  background-color: #f7f3f3;
+}
+.lista {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 2px;
+}
+
+.lista h1 {
+  color: #0074a2;
+  text-align: center;
+}
+.lista li {
+  padding: 10px;
+}
+
+.lista li input[type="checkbox"] {
+  margin-right: 10px;
+}
