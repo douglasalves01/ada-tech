@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="validacao.js" defer></script>
+    <title>Ajude a causa</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Ajude a causa</h2>
+      </div>
+      <form class="form" id="form">
+        <div class="controle">
+          <label for="username">Nome</label>
+          <input type="text" id="username" />
+          <i><img class="sucesso" src="./image/success-icon.svg" /></i>
+          <i><img class="erro" src="./image/error-icon.svg" /></i>
+          <small>Error message</small>
+        </div>
+        <div class="controle">
+          <label for="age">Idade</label>
+          <input type="number" id="age" />
+          <i><img class="sucesso" src="./image/success-icon.svg" /></i>
+          <i><img class="erro" src="./image/error-icon.svg" /></i>
+          <small>Error message</small>
+        </div>
+        <div class="controle">
+          <label for="email">Email</label>
+          <input type="email" id="email" />
+          <i><img class="sucesso" src="./image/success-icon.svg" /></i>
+          <i><img class="erro" src="./image/error-icon.svg" /></i>
+          <small>Error message</small>
+        </div>
+        <div class="controle" id="select">
+          <label for="tamanho">Tamanho da camiseta</label>
+          <select id="tamanho" name="tamanho">
+            <option value="P">P</option>
+            <option value="M">M</option>
+            <option value="G">G</option>
+            <option value="GG">GG</option>
+            <option value="XG">XG</option>
+          </select>
+        </div>
+        <div class="controle" id="select">
+          <label for="categoria">Categoria de inscrição</label>
+          <select id="categoria" name="categoria">
+            <option value="3">Corrida 3Km</option>
+            <option value="4">Corrida 4Km</option>
+            <option value="5">Corrida 5Km</option>
+          </select>
+        </div>
+        <div class="controle">
+          <label for="donation">Valor da doação</label>
+          <input type="number" id="donation" />
+          <i>
+            <img class="sucesso" src="./image/success-icon.svg" />
+          </i>
+          <i><img class="erro" src="./image/error-icon.svg" /></i>
+          <small>Error message</small>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
