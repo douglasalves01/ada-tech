@@ -12,7 +12,7 @@ rl.question("Digite seu peso em kg: ", (pesoInput) => {
     const altura = parseFloat(alturaInput);
 
     const imc = peso / (altura * altura);
-
+    
     let mensagem = `Seu IMC é ${imc.toFixed(2)}. Você está na faixa de: `;
 
     if (imc < 18.5) {

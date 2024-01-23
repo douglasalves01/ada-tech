@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="./src/css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Doodle+Shadow&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Jogo da Forca</title>
+  </head>
+  <body>
+    <div class="container-jogo-forca">
+      <h1>Jogo da Forca</h1>
+
+      <div class="container-interno">
+        <div class="forca">
+          <svg height="250" width="200" class="svg-forca">
+            <!-- forca -->
+            <line x1="60" y1="20" x2="140" y2="20" />
+            <line x1="140" y1="20" x2="140" y2="50" />
+            <line x1="60" y1="20" x2="60" y2="230" />
+            <line x1="20" y1="230" x2="100" y2="230" />
+
+            <!-- cabeça -->
+            <circle cx="140" cy="70" r="20" class="forca-parte" />
+            <!-- corpo -->
+            <line x1="140" y1="90" x2="140" y2="150" class="forca-parte" />
+            <!-- braços -->
+            <line x1="140" y1="120" x2="120" y2="100" class="forca-parte" />
+            <line x1="140" y1="120" x2="160" y2="100" class="forca-parte" />
+            <!-- pernas -->
+            <line x1="140" y1="150" x2="120" y2="180" class="forca-parte" />
+            <line x1="140" y1="150" x2="160" y2="180" class="forca-parte" />
+          </svg>
+        </div>
+
+        <div class="container-palavras">
+          <div class="categorias">
+            <h2>Categoria:</h2>
+            <div class="botoes"></div>
+          </div>
+
+          <div class="palavra-sorteada"></div>
+
+          <div class="teclado">
+            <button class="botao-teclado" id="a">A</button>
+            <button class="botao-teclado" id="b">B</button>
+            <button class="botao-teclado" id="c">C</button>
+            <button class="botao-teclado" id="d">D</button>
+            <button class="botao-teclado" id="e">E</button>
+            <button class="botao-teclado" id="f">F</button>
+            <button class="botao-teclado" id="g">G</button>
+            <button class="botao-teclado" id="h">H</button>
+            <button class="botao-teclado" id="i">I</button>
+            <button class="botao-teclado" id="j">J</button>
+            <button class="botao-teclado" id="k">K</button>
+            <button class="botao-teclado" id="l">L</button>
+            <button class="botao-teclado" id="m">M</button>
+            <button class="botao-teclado" id="n">N</button>
+            <button class="botao-teclado" id="o">O</button>
+            <button class="botao-teclado" id="p">P</button>
+            <button class="botao-teclado" id="q">Q</button>
+            <button class="botao-teclado" id="r">R</button>
+            <button class="botao-teclado" id="s">S</button>
+            <button class="botao-teclado" id="t">T</button>
+            <button class="botao-teclado" id="u">U</button>
+            <button class="botao-teclado" id="v">V</button>
+            <button class="botao-teclado" id="w">W</button>
+            <button class="botao-teclado" id="x">X</button>
+            <button class="botao-teclado" id="y">Y</button>
+            <button class="botao-teclado" id="z">Z</button>
+            <button class="botao-teclado" id="chutar">chutar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-popup">
+      <div class="popup">
+        <i class="fa-regular fa-face-sad-cry"></i>
+        <div class="game-over">
+          <h2>Você Perdeu!</h2>
+          <span>
+            <h4>A palavra correta era:</h4>
+            <h4 class="correct-word"></h4>
+          </span>
+          <button class="resetButton" onclick="resetGame()">JOGAR NOVAMENTE</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./src/js/script.js" type="module"></script>
+  </body>
+</html>
